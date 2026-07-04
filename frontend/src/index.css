@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color: #09090b;
+  }
+  
+  * { 
+    box-sizing: border-box; margin: 0; padding: 0; 
+  }
+  
+  body { 
+    background: var(--bg-color); 
+    color: #e4e4e7; 
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow: hidden;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+.xyflow__node {
+  /* Customize React Flow node focus */
+}
+.xyflow__handle {
+  transition: all 0.2s ease;
+}
+.xyflow__handle:hover {
+  transform: scale(1.5);
+}
+
+/* React Flow Dark Theme Overrides */
+.react-flow__controls, .xyflow__controls {
+  background-color: #18181b !important;
+  border-color: #3f3f46 !important;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+.react-flow__controls-button, .xyflow__controls-button {
+  background-color: #18181b !important;
+  border-bottom: 1px solid #3f3f46 !important;
+  color: #a1a1aa !important;
+  fill: #a1a1aa !important;
+}
+.react-flow__controls-button:hover, .xyflow__controls-button:hover {
+  background-color: #27272a !important;
+  color: #e4e4e7 !important;
+  fill: #e4e4e7 !important;
+}
+.react-flow__controls-button:last-child, .xyflow__controls-button:last-child {
+  border-bottom: none !important;
+}
+.react-flow__minimap, .xyflow__minimap {
+  background-color: #09090b !important;
+  border: 1px solid #3f3f46 !important;
+}
